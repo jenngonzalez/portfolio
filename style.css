@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+  }
+  
+  nav,
+  footer {
+    padding: 1% 0;
+    background-color: white;
+    border: 1px dashed black;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    /* z-index keeps fixed position elemnt always in front? */
+    height: 75px;
+    text-align: center;
+    line-height: 75px;
+  }
+  
+  
+  
+  header {
+    padding: 75px 0 10px 0;
+  }
+  
+  section {
+      min-height: 200px;
+  }
+  
+  /* section:nth-child(even) {
+    background-color: #ddd;
+  } */
+  
+
+  .main-image {
+      height: 375px;
+      margin-bottom: 50px;
+      background-color: gray;
+  }
+
+  .bio-text p {
+      text-align: left;
+      padding-left: 10px;
+      background-color: gray;
+      min-height: 200px;
+  }
+  .bio-text {
+      margin-bottom: 50px;
+  }
+  
+  h2 {
+      padding-top: 20px;
+  }
+
+  .project-image {
+      background-color: gray;
+      height: 300px;
+  }
+
+  .project-info {
+      background-color: lightgray;
+      min-height: 75px;
+      margin-top: -15px;
+  }
+
+  footer {
+      margin-top: 40px;
+  }
