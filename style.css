@@ -1,79 +1,326 @@
 * {
     box-sizing: border-box;
   }
+
   
-  body {
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: black;
     text-align: center;
+    background: ivory;
+    font-family: 'Raleway', sans-serif;
   }
   
-  nav,
-  footer {
+nav,
+footer {
     padding: 1% 0;
-    background-color: white;
-    border: 1px dashed black;
+    background-color: ivory;
   }
   
-  nav {
+nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
-    /* z-index keeps fixed position elemnt always in front? */
-    height: 75px;
+    height: auto;
+    line-height: 100%;
+  }
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    font-family: 'Raleway';
+    font-size: 16px;
+  }
+  
+
+nav p {
     text-align: center;
-    line-height: 75px;
+    font-family: 'Rock Salt';
+    letter-spacing: 2px;
+    line-height: 145%;
+    font-size: 28px;
+    background-image: -webkit-linear-gradient(left, rgb(8, 255, 222), #5f00f8, rgb(255, 0, 200)); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(left, #E0F8F7, #585858, #fff); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(left, #E0F8F7, #585858, #fff); /* For pre-releases of IE 10 */
+    background-image:      -o-linear-gradient(left, #E0F8F7, #585858, #fff); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(to right, rgb(4, 248, 208), #5f00f8, rgb(255, 0, 200)); /* Standard syntax; must be last */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+a {
+    color: #0BA2A2;
+    text-decoration: none;
+  }
+
+a:hover {
+    color: rgba(255, 0, 200);
+  }
+
+a:focus {
+    color: rgba(255, 0, 200);
   }
   
-  
-  
-  header {
+
+.first-divide {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 4px solid rgba(0, 255, 196);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+header {
     padding: 75px 0 10px 0;
-  }
-  
-  section {
-      min-height: 200px;
-  }
-  
-  /* section:nth-child(even) {
-    background-color: #ddd;
-  } */
-  
-
-  .main-image {
-      height: 375px;
-      margin-bottom: 50px;
-      background-color: gray;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .bio-text p {
+header h1 {
+    font-size: 30px;
+    font-family: 'Lora';
+    background-image: linear-gradient(to right, #5F00F8, rgb(156, 2, 228) 50%, rgba(212, 0 ,255));
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  }
+  
+  
+.second-divide {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid rgba(113, 113, 113, 0.3);
+  padding: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+
+ }
+
+.main-image {
+      margin-top: 50px;
+  }
+
+.main-image img {
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+    max-width: 238px;
+    border-radius: 3%;
+    box-shadow: 10px 10px 10px darkgray;
+  }
+
+.biography p {
       text-align: left;
       padding-left: 10px;
-      background-color: gray;
+      /* background-color: gray; */
       min-height: 200px;
+      font-size: 18px;
+      line-height: 1.5;
   }
-  .bio-text {
+
+.bio-text {
       margin-bottom: 50px;
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+.bio-text h2 {
+    font-size: 22px;
+    font-family: 'Lora';
+    padding-top: 20px;
   }
   
-  h2 {
-      padding-top: 20px;
+.third-divide {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 3px solid rgba(0, 255, 196, 0.3);
+    padding: 0;
+    /* margin-left: 93px;
+    margin-right: 93px; */
+    margin-top: -12px;
+    width: 105px;
   }
 
-  .project-image {
-      background-color: gray;
-      height: 300px;
+.fourth-divide {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 3px solid rgba(0, 255, 196, 0.3);
+    padding: 0;
+    margin-top: -12px;
+    margin-bottom: 20px;
+    width: 88px;
   }
 
-  .project-info {
-      background-color: lightgray;
+.project-example h2 {
+    font-size: 22px;
+    font-family: 'Lora';
+    padding-top: 20px;
+  }
+
+.project-image {
+      /* background-color: gray; */
+      /* height: 300px; */
+      /* margin-top: 20px; */
+      margin-top: 5%;
+      /* margin-left: auto;
+      margin-right: auto; */
+      /* background: cover; */
+      /* text-align: center;
+      padding: 0; */
+  }
+
+.project-image img {
+    /* height: 300px;
+    max-width: 340px; */
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+  }
+
+.project-info {
+      /* background-color: lightgray; */
       min-height: 75px;
-      margin-top: -15px;
+      height: auto;
+      /* margin-top: -15px; */
+      font-size: 12px;
+      /* line-height: 0.25; */
   }
 
-  footer {
-      margin-top: 40px;
+.project-info p {
+    line-height: 0.25;
   }
+
+footer {
+      margin-top: 40px;
+      font-size: 14px;
+  }
+
+
+
+
+
+ /* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...}  */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  /* .first-divide { */
+    /* flex-grow: 1;
+    align-self: flex-end;
+    margin-top: auto; */
+
+  nav li {
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+
+  header h1 {
+    margin-top: 120px;
+    max-width: 400px;
+    text-align: left;
+    /* margin-left: 10%; */
+    font-size: 35px;
+    width: 50%;
+  }
+
+  .main-image {
+    width: 50%;
+    flex-grow: 1;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .flex-container {
+    margin-top: 75px;
+  }
+
+  /* .second-divide {
+    flex-grow: 1;
+    align-self: flex-end;
+  } */
+
+
+/* body {
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+} */ /* font size transitions - needs work */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  margin-top: 150px;
+  }
+
+  .bio-text {
+  width: 50%;
+  }
+
+  .biography p {
+  font-size: 18px;
+  line-height: 2;
+  max-height: 100%;
+  max-width: 100%;
+  margin-left: 10px;
+  }
+
+  .project-example {
+  width: 50%;
+  flex-grow: 3;
+  }
+
+  .project-image img {
+  max-height: 300px;
+  max-width: 353px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .biography p {
+    font-size: 20px;
+    line-height: 2;
+    margin-left: 20px;
+  } 
+
+  header h1 {
+  margin-left: 13%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */

@@ -11,39 +11,74 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora|Raleway|Rock+Salt" rel="stylesheet">
+
+
 
     <!-- css normalize -->
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <!-- <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+    <!-- getting console errors with these - look into -->
 
     <!-- javascript -->
 
 
 </head>
 <body>
-        <nav role="navigation">Nav - Name and Contact Links</nav>
-    <main role="main">
-        <header role="banner">
-            <h1>Hero - Headline</h1>
+    <nav role="navigation" class="navigation">
+            <p>Jenn Gonzalez</p>
+            <hr class="first-divide">
+            <ul>
+            <li><a href="mailto:pnwtech21@gmail.com" target="_top">Email</a>
+            </li>
+            <li><a href="https://github.com/jenngonzalez" target="blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/jgonz1/" target="blank">LinkedIn</a></li>
+            </ul>
+            </nav>
+
+    <main role="main"><a name="top"></a>
+        <header role="banner" class="header">
+            <section class="main-image">
+                <img src="./assets/profile-self.jpg" alt="headshot" class="main-image">
+            </section>
+            <h1>Aspiring Software Engineer. Enrolled in Thinkful's Full Stack Program.</h1>
+            <hr class="second-divide">
         </header>
-
-        <section class="main-image">
-            [Main Image]
-        </section>
-
+        <div class="flex-container">
         <section class="bio-text">
-            <div><h2>Biography</h2></div>
-            <div class="biography"><p>Biography text here</p></div>
+            <div><h2>Biography</h2>
+                <hr class="third-divide">
+            </div>
+            <div class="biography">
+                <p>
+                A graduate of the University of Maryland currently based in Seattle, I am studying front and server side web development in Thinkful's full stack program. The ability to combine creativity and scientific methods has sparked my passion for software engineering. I am on my way to becoming proficient in front-end development, with experience in HTML, CSS, JavaScript and jQuery.
+                When I'm not coding, I work as a veterinary technician, and I love scuba diving, bouldering, yoga, and photography.
+                </p></div>
         </section>
 
         <section class="project-example">
-            <div><h2>Project - Quiz App</h2></div>
+            <div><h2>Projects</h2>
+                <hr class="fourth-divide">
+            </div>
 
-            <div class="project-image">[Project Image]</div>
+            <div class="project-image">
+                <img src="./assets/TwinPeaksQuizApp-compressed.png" alt="Screenshot of Twin Peaks Quiz App">
+            </div>
 
-            <div class="project-info"><p>Project Info</p></div>
+            <div class="project-info">
+                    <p>"<em>Twin Peaks</em> Quiz"</p>
+                    <p>A quiz app for fans of <em>Twin Peaks</em></p>
+                    <p>Features HTML, CSS, JavaScript, jQuery</p>
+                    <p><a href="https://jenngonzalez.github.io/Thinkful-Quiz-App/" target="blank">Link to Live Site</a></p>
+                    <p><a href="https://github.com/jenngonzalez/Thinkful-Quiz-App" target="blank">Link to Repo</a></p>
+            </div>
         </section>
+        </div>
     </main>
-    <footer role="content-info">Footer</footer>
-    
-</body>
+    <footer role="content-info">
+        <small>&copy; Copyright 2019, Jennifer Gonzalez | 
+        <a href="#top">Back to top</a>
+        </small>
+    </footer>
+  </body>
 </html>
