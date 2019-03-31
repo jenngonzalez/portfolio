@@ -164,43 +164,30 @@ header h1 {
     width: 88px;
   }
 
-.project-example h2 {
+.project-examples h2 {
     font-size: 22px;
     font-family: 'Lora';
     padding-top: 20px;
   }
 
-.project-image {
-      /* background-color: gray; */
-      /* height: 300px; */
-      /* margin-top: 20px; */
+.project-image, .api-image {
       margin-top: 5%;
-      /* margin-left: auto;
-      margin-right: auto; */
-      /* background: cover; */
-      /* text-align: center;
-      padding: 0; */
   }
 
-.project-image img {
-    /* height: 300px;
-    max-width: 340px; */
+.project-image img, .api-image img {
     width: 100%;
     height: 100%;
     max-width: 600px;
   }
 
-.project-info {
-      /* background-color: lightgray; */
+.project-info, .api-info {
       min-height: 75px;
       height: auto;
-      /* margin-top: -15px; */
       font-size: 12px;
-      /* line-height: 0.25; */
   }
 
-.project-info p {
-    line-height: 0.25;
+.project-info p, .api-info p {
+    line-height: 15px;
   }
 
 footer {
@@ -263,6 +250,10 @@ footer {
     margin-top: 75px;
   }
 
+  .twin-peaks-container{
+    margin-right: 15px;
+  }
+
   /* .second-divide {
     flex-grow: 1;
     align-self: flex-end;
@@ -279,15 +270,16 @@ footer {
 @media screen and (min-width: 768px) {
   .flex-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  align-content: center;
+  /* align-content: center; */
   margin-top: 150px;
   }
 
   .bio-text {
-  width: 50%;
+  width: 100%;
   }
 
   .biography p {
@@ -298,14 +290,22 @@ footer {
   margin-left: 10px;
   }
 
-  .project-example {
-  width: 50%;
-  flex-grow: 3;
+  .project-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* flex-grow: 3; */
+  }
+  
+
+  .project-image img, .api-image img {
+  max-height: 373px;
+  max-width: 500px;
   }
 
-  .project-image img {
-  max-height: 300px;
-  max-width: 353px;
+  .twin-peaks-container {
+    margin-right: 15px;
   }
 }
 
