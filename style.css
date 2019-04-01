@@ -311,14 +311,25 @@ footer {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+
+  .biography {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .biography p {
     font-size: 20px;
     line-height: 2;
-    margin-left: 20px;
+    /* margin-left: 20px; */
   } 
 
   header h1 {
   margin-left: 13%;
+  }
+  
+  .twin-peaks-container {
+    margin-right: 30px;
   }
 }
 
