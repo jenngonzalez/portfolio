@@ -86,9 +86,9 @@ header {
   }
 
 header h1 {
-    font-size: 30px;
-    font-family: 'Lora';
-    background-image: linear-gradient(to right, #5F00F8, rgb(156, 2, 228) 50%, rgba(212, 0 ,255));
+  font-size: 30px;
+  font-family: 'Lora';
+  background-image: linear-gradient(to right, #5F00F8, rgb(156, 2, 228) 50%, rgba(212, 0 ,255));
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -107,7 +107,7 @@ header h1 {
  }
 
 .main-image {
-      margin-top: 50px;
+    margin-top: 50px;
   }
 
 .main-image img {
@@ -122,15 +122,14 @@ header h1 {
 .biography p {
       text-align: left;
       padding-left: 10px;
-      /* background-color: gray; */
-      min-height: 200px;
+      margin-bottom: 40px;
       font-size: 18px;
       line-height: 1.5;
   }
 
 .bio-text {
       margin-bottom: 50px;
-      width: 75%;
+      width: 90%;
       margin-left: auto;
       margin-right: auto;
   }
@@ -170,30 +169,34 @@ header h1 {
     padding-top: 20px;
   }
 
-.project-image, .api-image {
+.project-image {
       margin-top: 5%;
   }
 
-.project-image img, .api-image img {
+.project-image img {
     width: 100%;
     height: 100%;
-    max-width: 600px;
+    max-width: 400px;
+    max-height: 350px;
+    border: 1px solid rgb(156, 2, 228);
   }
 
-.project-info, .api-info {
-      min-height: 75px;
-      height: auto;
-      font-size: 12px;
-  }
+.project-info {
+    min-height: 75px;
+    height: auto;
+    font-size: 12px;
+}
 
-.project-info p, .api-info p {
-    line-height: 15px;
-  }
+.project-info p {
+  line-height: 15px;
+  margin: 2px;
+}
+
 
 footer {
-      margin-top: 40px;
-      font-size: 14px;
-  }
+  margin-top: 40px;
+  font-size: 14px;
+}
 
 
 
@@ -209,11 +212,6 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
   }
-
-  /* .first-divide { */
-    /* flex-grow: 1;
-    align-self: flex-end;
-    margin-top: auto; */
 
   nav li {
     padding-left: 20px;
@@ -250,15 +248,6 @@ footer {
     margin-top: 75px;
   }
 
-  .twin-peaks-container{
-    margin-right: 15px;
-  }
-
-  /* .second-divide {
-    flex-grow: 1;
-    align-self: flex-end;
-  } */
-
 
 /* body {
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
@@ -269,43 +258,48 @@ footer {
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
   .flex-container {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  /* align-content: center; */
-  margin-top: 150px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* align-content: center; */
+    margin-top: 110px;
   }
 
   .bio-text {
-  width: 100%;
+    width: 100%;
   }
 
   .biography p {
-  font-size: 18px;
-  line-height: 2;
-  max-height: 100%;
-  max-width: 100%;
-  margin-left: 10px;
+    font-size: 18px;
+    line-height: 2;
+    max-height: 100%;
+    max-width: 100%;
   }
 
   .project-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* flex-grow: 3; */
-  }
-  
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-left: 10px;
+ }  
 
-  .project-image img, .api-image img {
-  max-height: 373px;
-  max-width: 500px;
+  .project-image img {
+    max-height: 240px;
+    max-width: 300px;
   }
 
-  .twin-peaks-container {
-    margin-right: 15px;
+  /* max-height: 350px;
+    max-width: 238px; */
+
+
+  .project-indiv {
+    width: 33%;
   }
 }
 
@@ -321,15 +315,10 @@ footer {
   .biography p {
     font-size: 20px;
     line-height: 2;
-    /* margin-left: 20px; */
   } 
 
   header h1 {
   margin-left: 13%;
-  }
-  
-  .twin-peaks-container {
-    margin-right: 30px;
   }
 }
 
